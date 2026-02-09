@@ -2,3 +2,13 @@ System.Out.println("Hello Oleg!");
 
 log.info("Commit to stale brunch");
 System.Out.println("Hello Oleg again!");
+
+
+@Test
+        @Order(1)
+        @DisplayName("SB-T7527 - Create GITLAB")
+        void create() {
+            googleConnectorsPage = connectToGoogle();
+            connectorTestTemplate.create(googleConnectorsPage);
+            isCreated = true;
+        }
