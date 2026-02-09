@@ -1,2 +1,4 @@
 System.Out.println("Hello Oleg!");
+
+log.info("Commit to stale brunch");
 System.Out.println("Hello Oleg again!");
